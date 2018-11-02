@@ -1,0 +1,570 @@
+.modal-footer {
+    border-top: 0;
+}
+
+.modal-action {
+    padding: 16px;
+    background: @light-green;
+    text-align: center;
+    .rounded(0 0 5px 5px);
+
+    .btn {
+        min-width: 150px;
+        margin: 0 5px;
+    }
+}
+
+.modal-body {
+    padding: 40px 20px;
+
+}
+
+.cancellation-modal {
+    &__form {
+        .modal-body {
+            @media @largeDevicesUp {
+                padding: 40px 55px;
+            }
+        }
+
+        &_select {
+            max-width: 400px;
+            margin-bottom: 20px;
+
+            .bootstrap-select {
+                padding-left: 10px;
+
+                .span-title {
+                    color: @primary-blue;
+                }
+
+                &.btn-group .dropdown-menu li {
+                    max-width: 100%;
+
+                    &:last-child {
+                        margin-bottom: 7px;
+                    }
+                }
+
+                .dropdown-menu {
+                    padding: 10px;
+
+                    .disabled {
+
+                        a,
+                        a:focus {
+                            color: @light-grey;
+                        }
+                    }
+
+                    .selected {
+
+                        a,
+                        a:focus {
+                            color: @action-blue;
+                        }
+                    }
+
+                    a {
+                        padding-left: 0;
+
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+
+                .dropdown-toggle::after {
+                    border-width: 0.4em;
+                }
+
+                &.show {
+                    .dropdown-toggle::after {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            &>label {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 1;
+                padding: 9px 10px;
+                color: @primary-blue;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+
+            &.selectpicker-more .bootstrap-select.btn-group .dropdown-menu.inner {
+                max-height: 250px;
+
+            }
+        }
+
+        .form-textarea {
+            position: relative;
+            margin-bottom: 30px;
+
+            label {
+                color: @primary-blue;
+                padding-left: 10px;
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+
+            .textarea {
+                background: @light-green;
+                width: 100%;
+                border: none;
+                resize: none;
+                padding: 15px;
+                height: 100px;
+            }
+
+        }
+
+        &_price {
+            max-width: 650px;
+
+            .form-control {
+                padding-left: 120px;
+                margin: 0;
+                font-size: 20px;
+
+                &:disabled {
+                    background: none;
+                    color: @light-grey;
+
+                    &~.cancellation-modal__form_price-label {
+                        color: @light-grey;
+                    }
+                }
+            }
+
+            &-label {
+                position: absolute;
+                height: 40px;
+                top: 0;
+                left: 0;
+                margin: 0 !important;
+                line-height: 38px;
+                width: 100px;
+                text-align: center;
+                border-right: 1px solid @light-grey;
+                font-size: 20px;
+            }
+
+            &-hint {
+                color: @light-grey;
+                padding-left: 23px;
+                font-size: 16px;
+            }
+        }
+
+        .modal-action {
+            .btn {
+                @media @smallDevices {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+.modal-fixed-bottom {
+    .modal-dialog {
+        position: fixed;
+        max-width: 100%;
+        width: 100%;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: 0;
+        margin-bottom: 0;
+        background: @backgoundGray;
+    }
+
+    .modal-content {
+        border-radius: 0;
+        background: @light-blue;
+    }
+
+    .modal-body {
+        overflow: hidden;
+    }
+
+    .close {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        z-index: 1;
+        font-size: 30px;
+        font-weight: bold;
+        color: @black;
+        opacity: .5;
+
+        &:hover,
+        &:focus {
+            opacity: .5;
+            color: @black;
+        }
+    }
+}
+
+
+body.modal-open--orderprinting {
+    .modal-orderprint {
+        .modal-body {
+            max-height: 700px;
+        }
+    }
+}
+
+.modal-orderprint,
+.modal-ordersetup,.modal-selectprinter {
+    .modal-body {
+        padding: 25px 0 0 0;
+        max-height: 450px;
+        min-height: 250px;
+    }
+
+    /* Bootstrap Select override rules */
+    .form-group-select {
+        .bootstrap-select {
+            .span-title {
+                color: @primary-blue;
+            }
+
+            &.btn-group {
+                .dropdown-menu {
+                    &.inner {
+                        max-height: 180px;
+                    }
+
+                    li {
+                        max-width: 95%;
+
+                        &.selected {
+                            a {
+                                background: @primary-blue;
+                                color: @white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .dropdown-menu {
+                &.open {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                a {
+                    padding: 10px 10px;
+                    border-radius: 2px;
+
+                    &:hover {
+                        color: @black;
+                        background: @table-blue;
+                    }
+
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+
+            .dropdown-toggle {
+                border-color: @action-blue;
+
+                &:after {
+                    border-width: 0.4em;
+                }
+            }
+
+            &.show {
+                box-shadow: 0 8px 5px 0 #EEE;
+
+                .dropdown-toggle::after {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        &>label {
+            font-size: @fontSize10;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+            left: 15px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+/* Order Print Tickets */
+.order-print-tickets {
+    .select-dropdown {
+        padding-left: 25px;
+        max-width: 21%
+    }
+
+    &__thead {
+        &.has-scrollbar{
+           padding-right: 20px!important; 
+        }
+    }
+
+    table {
+
+        thead tr th,
+        tbody tr td {
+            &:first-child {
+                width: 8%!important;
+            }
+
+            &:nth-child(2) {
+                width: 20%;
+            }
+
+            &:nth-child(3) {
+                width: 35%;
+            }
+
+            &:nth-child(4) {
+                width: 21%;
+            }
+
+            &:nth-child(5) {
+                width: 16%;
+            }
+        }
+
+        thead {
+            tr {
+                th {
+                    vertical-align: bottom;
+                    border: none;
+                    color: @black;
+                    font-size: @fontSize14;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    padding: .45rem 1rem;
+
+                    .order-print-tickets-selectall {
+                        &.checkbox-blue {
+                            margin: 0 0 0 -5px;
+
+                            label {
+                                color: @action-blue;
+                                padding: 0 0 0 30px;
+                                font-size: @fontSize12;
+                                font-weight: 500;
+
+                                &:before {
+                                    width: 18px;
+                                    height: 18px;
+                                    border: 1px solid @action-blue;
+                                    top: 0;
+                                    background: transparent;
+                                }
+
+                                &:after {
+                                    left: 6px;
+                                    top: 1px;
+                                    height: 12px;
+                                    border-width: 0 1px 1px 0;
+                                    cursor: pointer;
+                                    width: 6px;
+                                }
+                            }
+
+                            input[type=checkbox]:checked+label:before {
+                                background: @action-blue;
+                            }
+                        }
+                    }
+
+                    &.modal-orderprint-tickets-selectall {
+                        padding: 0;
+                        width: 2%;
+
+                        .dropdown {
+                            &.show {
+                                .dropdown-toggle::after {
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+
+                        .dropdown-menu {
+                            &.show {
+                                width: 200px;
+                                padding-top: 2rem;
+                                top: -42px !important;
+                                z-index: 1000;
+                                border: none;
+                                box-shadow: 1px 3px 5px 2px #eee;
+
+                                @media @mediumDevices {
+                                    top: 0px !important;
+                                }
+                            }
+                        }
+
+                        .btn {
+                            background: transparent;
+                            color: @primary-blue;
+                            font-size: @fontSize10;
+                            letter-spacing: 1.5px;
+                            position: relative;
+                            z-index: 9999;
+                            outline: none;
+                            box-shadow: none;
+                        }
+
+                        .custom-radio {
+                            input[type=radio] {
+                                left: 12px;
+                            }
+
+                            &__label {
+                                font-size: 10px;
+                                letter-spacing: 1.5px;
+                                padding-left: 2.5rem;
+                                line-height: 2.5;
+                                color: @primary-blue;
+                                font-weight: 500;
+
+                                &::before {
+                                    left: 12px;
+                                }
+                            }
+                        }
+
+                        .custom-radio input[type=radio]:checked+label::before {
+                            left: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.table-striped tbody tr:nth-of-type(even) {
+            background: transparent;
+        }
+
+        tbody {
+            tr {
+                td {
+                    font-size: @fontSize14;
+                    border-right: 1px solid @table-border;
+                    border-top: none;
+                    vertical-align: middle;
+                    color: @black;
+                    padding: 0.2rem 1rem;
+
+                    &:last-child {
+                        border-right: none;
+                    }
+
+                    &:first-child {
+                        vertical-align: top;
+                        padding-top: 20px;
+                        text-align: center;
+                    }
+
+                    .label-text {
+                        margin: 0;
+                        color: @black;
+                        font-size: @fontSize10;
+                        opacity: .6;
+                    }
+
+                    .checkbox-blue {
+                        font-size: @fontSize10;
+                        color: @primary-blue;
+                        font-weight: 500;
+                        letter-spacing: 1.5px;
+                        text-transform: uppercase;
+                        padding-top: 0;
+                        margin-bottom: 0;
+
+                        input {
+                            width: 24px;
+                            height: 24px;
+                            left: 12px;
+                            top: -7px;
+                            position: absolute;
+                        }
+
+                        label {
+                            &:before {
+                                border: 1px solid @action-blue;
+                                top: -7px;
+                                background: transparent;
+                            }
+
+                            &:after {
+                                top: -5px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-btn {
+        button {
+            width: 200px;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__seeall {
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(248, 249, 250, .0001) 0, @backgoundGray 90.87%);
+        padding: 2rem 0;
+        text-align: center;
+
+        .btn-outline-primary {
+            height: 30px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            line-height: 1;
+
+            &:hover {
+                outline: none;
+            }
+        }
+    }
+
+    .order-print-tablescrollbar {
+        max-height: 350px;
+    }
+
+    .mCSB_draggerContainer {
+        left: 7px;
+    }
+
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background: @gun-metal  !important;
+        width: 6px;
+        opacity: .5;
+    }
+
+    .mCSB_scrollTools .mCSB_draggerRail {
+        width: 6px;
+    }
+
+    .mCSB_inside>.mCSB_container {
+        margin-right: 20px;
+    }
+
+}

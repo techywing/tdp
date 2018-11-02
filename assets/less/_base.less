@@ -1,0 +1,114 @@
+body {
+    color: @black;
+    line-height: 1.5;
+	font-family: @fontFamily;
+	font-size: @fontSize14;
+	background: @light-blue;
+}
+.text-uppercase { text-transform: uppercase!important }
+.browserupgrade {
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #CCC;
+    color: #333;
+    padding: 10px;
+	a {
+		text-decoration: underline;
+		color: #333;
+	}
+}
+.main-contentarea {
+  background-color: @light-blue;
+}
+.container {
+    max-width: 100%;
+	&-inner{
+		max-width: 1170px;
+		@media @smallDevices {
+			overflow-x: auto;
+		}
+		&__option, &__tabs {
+			float: right;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			.btn {
+				text-decoration: none;
+				font-size: @fontSize10;
+				&.active {
+					background:@primary-blue;
+					color: @white;
+				}
+			}
+		}
+		&__title {
+			float: left;
+		}
+		&__fix{
+			max-width:1440px;
+			padding:0 15px;
+			margin: 0 auto;
+		}
+		&__content{
+			max-width:1200px;
+			margin:0 auto;
+			padding:25px 15px;
+		}
+	}
+}
+.nav-page__row {
+	@media @smallDevices {
+		display: block;
+	}
+}
+.dataTables_paginate {
+		display:none;
+	}
+.dataTables_info{
+	display:none;
+}
+.show-table-info .dataTables_info{
+	display:block;
+	position:F absolute;
+	margin: 0;
+	padding-top: 20px;
+	padding-left: 15px;
+	color: @dark-grey;
+}
+.table-responsive {
+	@media @largeDevicesUp {
+		overflow-x: inherit;
+	}	
+}
+
+
+.datasorting {
+	background-image: url(../images/sorting-init.svg);
+	cursor: pointer;
+    background-repeat: no-repeat;
+	background-position: 94% 50%;
+	&:hover {
+		background-color:@light-grey2;
+	}
+}
+.datasorting.datasorting--desc {
+    background-image: url(../images/sorting-desc-icon.svg);
+}
+.datasorting.datasorting--asc {
+    background-image: url(../images/sorting-asc-icon.svg);
+}
+.right-details {
+	padding: 25px 10px 55px 25px;
+	overflow-y: auto;
+}
+
+.nospace-inline {
+    font-family: NoSpace!important;
+}
+.nospace-inline > * {
+    display: inline-block;
+    font-family: @fontFamily;
+}

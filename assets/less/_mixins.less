@@ -1,0 +1,165 @@
+// ==========================================================================
+// mixins
+// ==========================================================================
+
+.transition(@arguments) {
+    -webkit-transition: @arguments;
+    -moz-transition: @arguments;
+    -o-transition: @arguments;
+    transition: @arguments;
+}
+
+.transition-property(@arguments) { 
+    -webkit-transition-property: @arguments;
+    -moz-transition-property: @arguments;
+    -ms-transition-property: @arguments;
+    -o-transition-property: @arguments;
+    transition-property: @arguments;
+}
+
+.transition-duration(@arguments) { 
+    -webkit-transition-duration: @arguments;
+    -moz-transition-duration: @arguments;
+    -ms-transition-duration: @arguments;
+    -o-transition-duration: @arguments;
+    transition-duration: @arguments;
+}
+
+.transition-timing-function(@arguments) { 
+    -webkit-transition-timing-function: @arguments;
+    -moz-transition-timing-function: @arguments;
+    -ms-transition-timing-function: @arguments;
+    -o-transition-timing-function: @arguments;
+    transition-timing-function: @arguments;
+}
+
+.transform-translate(@x, @y) { 
+    -ms-transform: translateX(@x) translateY(@y);
+    -webkit-transform: translate(@x,@y);
+    -moz-transform: translate(@x,@y);
+    transform: translate(@x,@y);
+}
+
+.transform(@arguments) { 
+    -webkit-transform: @arguments;
+    -moz-transform: @arguments;
+    -o-transform: @arguments;
+    -ms-transform: @arguments;
+    transform: @arguments;
+}
+
+.transform-origin(@x:center, @y:center) { 
+    -webkit-transform-origin: @x @y;
+    -moz-transform-origin: @x @y;
+    -ms-transform-origin: @x @y;
+    -o-transform-origin: @x @y;
+    transform-origin: @x @y;
+}
+
+.gradient (@startColor: #eee, @endColor: white) { 
+    background-color: @startColor;
+    background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+    background: -webkit-linear-gradient(top, @startColor, @endColor);
+    background: -moz-linear-gradient(top, @startColor, @endColor);
+    background: -ms-linear-gradient(top, @startColor, @endColor);
+    background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) { 
+    -webkit-animation: @name @duration @delay @ease;
+    -moz-animation: @name @duration @delay @ease;
+    -ms-animation: @name @duration @delay @ease;
+    animation: @name @duration @delay @ease;
+}
+
+.rounded(@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.box-shadow(@arguments) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.appearance(@appearance) {
+    -webkit-appearance: @appearance;
+    -moz-appearance: @appearance;
+    appearance: @appearance;
+}
+
+.box-ordinal-group(@arguments) { 
+    -webkit-box--ordinal-group: @arguments;  /*  safari chrome  */
+    -moz-box-ordinal-group: @arguments;  /*  mozilla  */
+    box-ordinal-group: @arguments; /* Standard syntax */
+}
+
+//user-select: auto|none|text|all;
+.user-select(@arguments) { 
+    -khtml-user-select: @arguments; /* Safari */
+    -webkit-user-select: @arguments; /* Chrome, Opera, Safari */
+    -moz-user-select: @arguments; /* Firefox 2+ */
+    -ms-user-select: @arguments; /* IE 10+ */
+    user-select: @arguments; /* Standard syntax */
+}
+
+.box-orient(@arguments) { //Used
+    -webkit-box-orient: @arguments; /* Chrome, Opera, Safari */
+    -moz-box-orient: @arguments; /* Firefox 2+ */
+    -ms-box-orient: @arguments; /* IE 10+ */
+    box-orient: @arguments; /* Standard syntax */
+}
+
+// Flexbox display
+// flex
+.flex-display(@display: flex) { //Used
+    display: -webkit-box;
+    display: ~"-webkit-@{display}";
+    display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+    display: ~"-ms-@{display}"; // IE11
+    display: @display;
+}
+
+// Flexbox display
+//inline-flex
+.flex-inline-display(@display: inline-flex) { //Used
+    display: ~"-webkit-@{display}";
+    display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+    display: ~"-ms-@{display}"; // IE11
+    display: @display;
+}
+
+// Flex Flow Direction
+// - applies to: flex containers
+// row | row-reverse | column | column-reverse
+.flex-direction(@direction: row) { //Used
+    -webkit-flex-direction: @direction;
+    -ms-flex-direction: @direction;
+    flex-direction: @direction;
+}
+
+// Flex Direction and Wrap
+// - applies to: flex containers
+// <flex-direction> || <flex-wrap>
+.flex-flow(@flow) { //Used
+    -webkit-flex-flow: @flow;
+    -ms-flex-flow: @flow;
+    flex-flow: @flow;
+}
+
+// Display Order
+// - applies to: flex items
+// order: number|initial|inherit;
+.flex-order(@order: 0) { //Used
+    -webkit-order: @order;
+    -ms-flex-order: @order;
+    -ms-order: @order;
+    order: @order;
+}
+.flex-align-items(@alignStyle) {
+    -ms-flex-align:@alignStyle;
+    -webkit-align-items:@alignStyle;
+     align-items: @alignStyle;   
+}
