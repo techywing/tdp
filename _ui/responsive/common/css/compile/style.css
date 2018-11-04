@@ -1,3 +1,17 @@
+.navbar.bg-light {
+	background-image: linear-gradient(#fed211 90%, #ed3627);
+}
+
+.navbar > .navbar-brand .logo {
+	height: 80px;
+	width: 80px;
+	margin: 0px 15px 10px 20px;
+}
+
+.navbar .navbar-nav .nav-link {
+	font-size: 20px;
+}
+
 .sitemap img {
 	width: 120px;
 	height: 120px;
