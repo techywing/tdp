@@ -12,9 +12,707 @@
 	font-size: 20px;
 }
 
+body {
+	color: #131516;
+	line-height: 1.5;
+	font-family: 'telugu';
+	font-size: 14px;
+	background: #f9f9f9;
+}
+
+.carousel {
+	margin-top: 140px;
+}
+
+.carousel-inner {
+	height: 400px;
+}
+
+.footer {
+	width: 100%;
+	height: 200px;
+}
+
+.radio {
+	border-left: 3px dashed #ed3627;
+	height: auto;
+	position: absolute;
+	left: 2px;
+	top: 0;
+	padding-left: 7px;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+.radio input {
+	position: relative;
+	top: 18px;
+	right: 14px;
+}
+
+.radio label {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	padding-left: 13px;
+	margin: 0;
+	font-size: 12px;
+}
+
+.radio label:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	left: 0;
+	margin-left: -20px;
+	border: 1px solid #fed211;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	-webkit-transition: border 0.15s ease-in-out;
+	-moz-transition: border 0.15s ease-in-out;
+	-o-transition: border 0.15s ease-in-out;
+	transition: border 0.15s ease-in-out;
+}
+
+.radio label:after {
+	display: inline-block;
+	position: absolute;
+	content: " ";
+	width: 15px;
+	height: 15px;
+	left: 4px;
+	top: 4px;
+	margin-left: -20px;
+	border-radius: 50%;
+	background-color: #ed3627;
+	-webkit-transform: scale(0, 0);
+	-moz-transform: scale(0, 0);
+	-o-transform: scale(0, 0);
+	-ms-transform: scale(0, 0);
+	transform: scale(0, 0);
+	-webkit-transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+	-moz-transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+	-o-transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+	transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+}
+
+.radio input[type="radio"] {
+	opacity: 0;
+	z-index: 1;
+}
+
+.radio input[type="radio"]:focus {
+	outline: none;
+	outline-offset: -2px;
+}
+
+.radio input[type="radio"]:focus + label:before {
+	outline: none;
+	outline-offset: -2px;
+}
+
+.radio input[type="radio"]:checked + label:after {
+	-webkit-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	transform: scale(1, 1);
+}
+
+@font-face {
+	font-family: 'telugu';
+	src: url('../fonts/Gidugu Regular.ttf');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'telugu1';
+	src: url('../fonts/GIST-TLOT Krishna Bold.ttf');
+	font-weight: 100;
+	font-style: normal;
+}
+
+.modal-footer {
+	border-top: 0;
+}
+
+.modal-action {
+	padding: 16px;
+	background: #EFF4F8;
+	text-align: center;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+.modal-action .btn {
+	min-width: 150px;
+	margin: 0 5px;
+}
+
+.modal-body {
+	padding: 40px 20px;
+}
+
+.cancellation-modal__form_select {
+	max-width: 400px;
+	margin-bottom: 20px;
+}
+
+.cancellation-modal__form_select .bootstrap-select {
+	padding-left: 10px;
+}
+
+.cancellation-modal__form_select .bootstrap-select .span-title {
+	color: #0097FE;
+}
+
+.cancellation-modal__form_select .bootstrap-select.btn-group .dropdown-menu li {
+	max-width: 100%;
+}
+
+.cancellation-modal__form_select .bootstrap-select.btn-group .dropdown-menu li:last-child {
+	margin-bottom: 7px;
+}
+
+.cancellation-modal__form_select .bootstrap-select .dropdown-menu {
+	padding: 10px;
+}
+
+.cancellation-modal__form_select .bootstrap-select .dropdown-menu .disabled a,
+.cancellation-modal__form_select .bootstrap-select .dropdown-menu .disabled a:focus {
+	color: #D2D5D9;
+}
+
+.cancellation-modal__form_select .bootstrap-select .dropdown-menu .selected a,
+.cancellation-modal__form_select .bootstrap-select .dropdown-menu .selected a:focus {
+	color: #1CA8F3;
+}
+
+.cancellation-modal__form_select .bootstrap-select .dropdown-menu a {
+	padding-left: 0;
+}
+
+.cancellation-modal__form_select .bootstrap-select .dropdown-menu a:before {
+	display: none;
+}
+
+.cancellation-modal__form_select .bootstrap-select .dropdown-toggle::after {
+	border-width: 0.4em;
+}
+
+.cancellation-modal__form_select .bootstrap-select.show .dropdown-toggle::after {
+	transform: rotate(180deg);
+}
+
+.cancellation-modal__form_select > label {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	padding: 9px 10px;
+	color: #0097FE;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.cancellation-modal__form_select.selectpicker-more .bootstrap-select.btn-group .dropdown-menu.inner {
+	max-height: 250px;
+}
+
+.cancellation-modal__form .form-textarea {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.cancellation-modal__form .form-textarea label {
+	color: #0097FE;
+	padding-left: 10px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.cancellation-modal__form .form-textarea .textarea {
+	background: #EFF4F8;
+	width: 100%;
+	border: none;
+	resize: none;
+	padding: 15px;
+	height: 100px;
+}
+
+.cancellation-modal__form_price {
+	max-width: 650px;
+}
+
+.cancellation-modal__form_price .form-control {
+	padding-left: 120px;
+	margin: 0;
+	font-size: 20px;
+}
+
+.cancellation-modal__form_price .form-control:disabled {
+	background: none;
+	color: #D2D5D9;
+}
+
+.cancellation-modal__form_price .form-control:disabled ~ .cancellation-modal__form_price-label {
+	color: #D2D5D9;
+}
+
+.cancellation-modal__form_price-label {
+	position: absolute;
+	height: 40px;
+	top: 0;
+	left: 0;
+	margin: 0 !important;
+	line-height: 38px;
+	width: 100px;
+	text-align: center;
+	border-right: 1px solid #D2D5D9;
+	font-size: 20px;
+}
+
+.cancellation-modal__form_price-hint {
+	color: #D2D5D9;
+	padding-left: 23px;
+	font-size: 16px;
+}
+
+.modal-fixed-bottom .modal-dialog {
+	position: fixed;
+	max-width: 100%;
+	width: 100%;
+	top: auto;
+	right: auto;
+	left: auto;
+	bottom: 0;
+	margin-bottom: 0;
+	background: #F8F9FA;
+}
+
+.modal-fixed-bottom .modal-content {
+	border-radius: 0;
+	background: #f9f9f9;
+}
+
+.modal-fixed-bottom .modal-body {
+	overflow: hidden;
+}
+
+.modal-fixed-bottom .close {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	z-index: 1;
+	font-size: 30px;
+	font-weight: bold;
+	color: #131516;
+	opacity: 0.5;
+}
+
+.modal-fixed-bottom .close:hover,
+.modal-fixed-bottom .close:focus {
+	opacity: 0.5;
+	color: #131516;
+}
+
+body.modal-open--orderprinting .modal-orderprint .modal-body {
+	max-height: 700px;
+}
+
+.modal-orderprint,
+.modal-ordersetup,
+.modal-selectprinter { /* Bootstrap Select override rules */
+}
+
+.modal-orderprint .modal-body,
+.modal-ordersetup .modal-body,
+.modal-selectprinter .modal-body {
+	padding: 25px 0 0 0;
+	max-height: 450px;
+	min-height: 250px;
+}
+
+.modal-orderprint .form-group-select .bootstrap-select .span-title,
+.modal-ordersetup .form-group-select .bootstrap-select .span-title,
+.modal-selectprinter .form-group-select .bootstrap-select .span-title {
+	color: #0097FE;
+}
+
+.modal-orderprint .form-group-select .bootstrap-select.btn-group .dropdown-menu.inner,
+.modal-ordersetup .form-group-select .bootstrap-select.btn-group .dropdown-menu.inner,
+.modal-selectprinter .form-group-select .bootstrap-select.btn-group .dropdown-menu.inner {
+	max-height: 180px;
+}
+
+.modal-orderprint .form-group-select .bootstrap-select.btn-group .dropdown-menu li,
+.modal-ordersetup .form-group-select .bootstrap-select.btn-group .dropdown-menu li,
+.modal-selectprinter .form-group-select .bootstrap-select.btn-group .dropdown-menu li {
+	max-width: 95%;
+}
+
+.modal-orderprint .form-group-select .bootstrap-select.btn-group .dropdown-menu li.selected a,
+.modal-ordersetup .form-group-select .bootstrap-select.btn-group .dropdown-menu li.selected a,
+.modal-selectprinter .form-group-select .bootstrap-select.btn-group .dropdown-menu li.selected a {
+	background: #0097FE;
+	color: #FFFFFF;
+}
+
+.modal-orderprint .form-group-select .bootstrap-select .dropdown-menu.open,
+.modal-ordersetup .form-group-select .bootstrap-select .dropdown-menu.open,
+.modal-selectprinter .form-group-select .bootstrap-select .dropdown-menu.open {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.modal-orderprint .form-group-select .bootstrap-select .dropdown-menu a,
+.modal-ordersetup .form-group-select .bootstrap-select .dropdown-menu a,
+.modal-selectprinter .form-group-select .bootstrap-select .dropdown-menu a {
+	padding: 10px 10px;
+	border-radius: 2px;
+}
+
+.modal-orderprint .form-group-select .bootstrap-select .dropdown-menu a:hover,
+.modal-ordersetup .form-group-select .bootstrap-select .dropdown-menu a:hover,
+.modal-selectprinter .form-group-select .bootstrap-select .dropdown-menu a:hover {
+	color: #131516;
+	background: #EFF4F8;
+}
+
+.modal-orderprint .form-group-select .bootstrap-select .dropdown-menu a:before,
+.modal-ordersetup .form-group-select .bootstrap-select .dropdown-menu a:before,
+.modal-selectprinter .form-group-select .bootstrap-select .dropdown-menu a:before {
+	display: none;
+}
+
+.modal-orderprint .form-group-select .bootstrap-select .dropdown-toggle,
+.modal-ordersetup .form-group-select .bootstrap-select .dropdown-toggle,
+.modal-selectprinter .form-group-select .bootstrap-select .dropdown-toggle {
+	border-color: #1CA8F3;
+}
+
+.modal-orderprint .form-group-select .bootstrap-select .dropdown-toggle:after,
+.modal-ordersetup .form-group-select .bootstrap-select .dropdown-toggle:after,
+.modal-selectprinter .form-group-select .bootstrap-select .dropdown-toggle:after {
+	border-width: 0.4em;
+}
+
+.modal-orderprint .form-group-select .bootstrap-select.show,
+.modal-ordersetup .form-group-select .bootstrap-select.show,
+.modal-selectprinter .form-group-select .bootstrap-select.show {
+	box-shadow: 0 8px 5px 0 #EEE;
+}
+
+.modal-orderprint .form-group-select .bootstrap-select.show .dropdown-toggle::after,
+.modal-ordersetup .form-group-select .bootstrap-select.show .dropdown-toggle::after,
+.modal-selectprinter .form-group-select .bootstrap-select.show .dropdown-toggle::after {
+	transform: rotate(180deg);
+}
+
+.modal-orderprint .form-group-select > label,
+.modal-ordersetup .form-group-select > label,
+.modal-selectprinter .form-group-select > label {
+	font-size: 10px;
+	letter-spacing: 1.5px;
+	font-weight: 500;
+	left: 15px;
+	text-transform: uppercase;
+}
+
+/* Order Print Tickets */
+
+.order-print-tickets .select-dropdown {
+	padding-left: 25px;
+	max-width: 21%;
+}
+
+.order-print-tickets__thead.has-scrollbar {
+	padding-right: 20px!important;
+}
+
+.order-print-tickets table thead tr th:first-child,
+.order-print-tickets table tbody tr td:first-child {
+	width: 8%!important;
+}
+
+.order-print-tickets table thead tr th:nth-child(2),
+.order-print-tickets table tbody tr td:nth-child(2) {
+	width: 20%;
+}
+
+.order-print-tickets table thead tr th:nth-child(3),
+.order-print-tickets table tbody tr td:nth-child(3) {
+	width: 35%;
+}
+
+.order-print-tickets table thead tr th:nth-child(4),
+.order-print-tickets table tbody tr td:nth-child(4) {
+	width: 21%;
+}
+
+.order-print-tickets table thead tr th:nth-child(5),
+.order-print-tickets table tbody tr td:nth-child(5) {
+	width: 16%;
+}
+
+.order-print-tickets table thead tr th {
+	vertical-align: bottom;
+	border: none;
+	color: #131516;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 0.45rem 1rem;
+}
+
+.order-print-tickets table thead tr th .order-print-tickets-selectall.checkbox-blue {
+	margin: 0 0 0 -5px;
+}
+
+.order-print-tickets table thead tr th .order-print-tickets-selectall.checkbox-blue label {
+	color: #1CA8F3;
+	padding: 0 0 0 30px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.order-print-tickets table thead tr th .order-print-tickets-selectall.checkbox-blue label:before {
+	width: 18px;
+	height: 18px;
+	border: 1px solid #1CA8F3;
+	top: 0;
+	background: transparent;
+}
+
+.order-print-tickets table thead tr th .order-print-tickets-selectall.checkbox-blue label:after {
+	left: 6px;
+	top: 1px;
+	height: 12px;
+	border-width: 0 1px 1px 0;
+	cursor: pointer;
+	width: 6px;
+}
+
+.order-print-tickets table thead tr th .order-print-tickets-selectall.checkbox-blue input[type=checkbox]:checked + label:before {
+	background: #1CA8F3;
+}
+
+.order-print-tickets table thead tr th.modal-orderprint-tickets-selectall {
+	padding: 0;
+	width: 2%;
+}
+
+.order-print-tickets table thead tr th.modal-orderprint-tickets-selectall .dropdown.show .dropdown-toggle::after {
+	transform: rotate(180deg);
+}
+
+.order-print-tickets table thead tr th.modal-orderprint-tickets-selectall .dropdown-menu.show {
+	width: 200px;
+	padding-top: 2rem;
+	top: -42px !important;
+	z-index: 1000;
+	border: none;
+	box-shadow: 1px 3px 5px 2px #eee;
+}
+
+.order-print-tickets table thead tr th.modal-orderprint-tickets-selectall .btn {
+	background: transparent;
+	color: #0097FE;
+	font-size: 10px;
+	letter-spacing: 1.5px;
+	position: relative;
+	z-index: 9999;
+	outline: none;
+	box-shadow: none;
+}
+
+.order-print-tickets table thead tr th.modal-orderprint-tickets-selectall .custom-radio input[type=radio] {
+	left: 12px;
+}
+
+.order-print-tickets table thead tr th.modal-orderprint-tickets-selectall .custom-radio__label {
+	font-size: 10px;
+	letter-spacing: 1.5px;
+	padding-left: 2.5rem;
+	line-height: 2.5;
+	color: #0097FE;
+	font-weight: 500;
+}
+
+.order-print-tickets table thead tr th.modal-orderprint-tickets-selectall .custom-radio__label::before {
+	left: 12px;
+}
+
+.order-print-tickets table thead tr th.modal-orderprint-tickets-selectall .custom-radio input[type=radio]:checked + label::before {
+	left: 12px;
+}
+
+.order-print-tickets table.table-striped tbody tr:nth-of-type(even) {
+	background: transparent;
+}
+
+.order-print-tickets table tbody tr td {
+	font-size: 14px;
+	border-right: 1px solid #dee2e6;
+	border-top: none;
+	vertical-align: middle;
+	color: #131516;
+	padding: 0.2rem 1rem;
+}
+
+.order-print-tickets table tbody tr td:last-child {
+	border-right: none;
+}
+
+.order-print-tickets table tbody tr td:first-child {
+	vertical-align: top;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.order-print-tickets table tbody tr td .label-text {
+	margin: 0;
+	color: #131516;
+	font-size: 10px;
+	opacity: 0.6;
+}
+
+.order-print-tickets table tbody tr td .checkbox-blue {
+	font-size: 10px;
+	color: #0097FE;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	padding-top: 0;
+	margin-bottom: 0;
+}
+
+.order-print-tickets table tbody tr td .checkbox-blue input {
+	width: 24px;
+	height: 24px;
+	left: 12px;
+	top: -7px;
+	position: absolute;
+}
+
+.order-print-tickets table tbody tr td .checkbox-blue label:before {
+	border: 1px solid #1CA8F3;
+	top: -7px;
+	background: transparent;
+}
+
+.order-print-tickets table tbody tr td .checkbox-blue label:after {
+	top: -5px !important;
+}
+
+.order-print-tickets-btn button {
+	width: 200px;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.order-print-tickets__seeall {
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	background: linear-gradient(180deg, rgba(248, 249, 250, 0.0001) 0, #F8F9FA 90.87%);
+	padding: 2rem 0;
+	text-align: center;
+}
+
+.order-print-tickets__seeall .btn-outline-primary {
+	height: 30px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 1;
+}
+
+.order-print-tickets__seeall .btn-outline-primary:hover {
+	outline: none;
+}
+
+.order-print-tickets .order-print-tablescrollbar {
+	max-height: 350px;
+}
+
+.order-print-tickets .mCSB_draggerContainer {
+	left: 7px;
+}
+
+.order-print-tickets .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background: #555f61 !important;
+	width: 6px;
+	opacity: 0.5;
+}
+
+.order-print-tickets .mCSB_scrollTools .mCSB_draggerRail {
+	width: 6px;
+}
+
+.order-print-tickets .mCSB_inside > .mCSB_container {
+	margin-right: 20px;
+}
+
 .sitemap img {
 	width: 120px;
 	height: 120px;
 	padding: 15px;
+}
+
+.tdp__news-date {
+	font-size: 40px;
+}
+
+.tdp__news-mon p {
+	margin: 0;
+	text-transform: capitalize;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.tdp__latest-news {
+	border-left: 2px dotted #fed211;
+}
+
+.tdp__latest-news--date {
+	display: inline-block;
+	padding-bottom: 4px;
+}
+
+.tdp__latest-news--date p {
+	margin: 0;
+	text-align: center;
+	font-weight: 600;
+	font-size: 10px;
+	text-transform: capitalize;
+	vertical-align: middle;
+}
+
+@media (min-width : 992px) {
+
+.cancellation-modal__form .modal-body {
+	padding: 40px 55px;
+}
+
+}
+
+@media (max-width : 991.98px) {
+
+.order-print-tickets table thead tr th.modal-orderprint-tickets-selectall .dropdown-menu.show {
+	top: 0px !important;
+}
+
+}
+
+@media (max-width: 767.98px) {
+
+.cancellation-modal__form .modal-action .btn {
+	margin-bottom: 20px;
+}
+
 }
 

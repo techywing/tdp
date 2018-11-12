@@ -1,0 +1,28 @@
+.tdp{
+    &__news{
+        &-date{
+            font-size: @fontSize40;
+        }
+        &-mon p{
+            margin: 0;
+            text-transform: capitalize;
+            font-size:  @fontSize12;
+            font-weight: 500;
+        }
+    }
+    &__latest-news{
+        border-left:2px dotted @primary-color;
+        &--date{
+            display: inline-block;
+            padding-bottom: 4px;
+            p{
+                margin: 0;
+                text-align: center;
+                font-weight: 600;
+                font-size: @fontSize10;
+                text-transform: capitalize;
+                vertical-align: middle;
+            }
+        }
+    }
+}
