@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                     'assets/js/popper-1.12.9.min.js',
                     'assets/js/bootstrap.4.0.0.js',
                     'assets/js/jquery.dataTables-1.10.16.min.js',
-                    'assets/js/jquery.validate-1.16.0.min.js'
+					'assets/js/jquery.validate-1.16.0.min.js',
                 ],
                 dest: '_ui/responsive/common/js/combined.js',
             }

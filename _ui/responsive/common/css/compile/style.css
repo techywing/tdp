@@ -15,9 +15,12 @@
 body {
 	color: #131516;
 	line-height: 1.5;
-	font-family: 'telugu';
 	font-size: 14px;
 	background: #f9f9f9;
+}
+
+h3 {
+	font-family: 'telugu';
 }
 
 .carousel {
@@ -57,6 +60,7 @@ body {
 	padding-left: 13px;
 	margin: 0;
 	font-size: 12px;
+	font-family: 'telugu2';
 }
 
 .radio label:before {
@@ -133,6 +137,13 @@ body {
 	src: url('../fonts/GIST-TLOT Krishna Bold.ttf');
 	font-weight: 100;
 	font-style: normal;
+}
+
+@font-face {
+	font-family: 'telugu2';
+	src: url('../fonts/Mandali-Regular.ttf');
+	font-style: bold;
+	font-weight: 500;
 }
 
 .modal-footer {
@@ -672,6 +683,24 @@ body.modal-open--orderprinting .modal-orderprint .modal-body {
 	text-transform: capitalize;
 	font-size: 12px;
 	font-weight: 500;
+}
+
+.tdp__news-info {
+	font-family: 'telugu2';
+}
+
+.tdp__news .owl-carousel .owl-item {
+	width: auto !important;
+}
+
+.tdp__news .owl-carousel .owl-wrapper {
+	width: auto !important;
+	display: -webkit-box !important;
+}
+
+.tdp__news .owl-theme .owl-controls .owl-buttons div {
+	background: #fed211;
+	text-transform: capitalize;
 }
 
 .tdp__latest-news {
