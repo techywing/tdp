@@ -12,6 +12,16 @@
 	font-size: 20px;
 }
 
+footer {
+	background-image: linear-gradient(#131516 90%, #fed211);
+}
+
+footer address {
+	font-style: oblique;
+	font-size: 14px;
+	padding-top: 10px;
+}
+
 body {
 	color: #131516;
 	line-height: 1.5;
@@ -23,7 +33,7 @@ h3 {
 	font-family: 'telugu';
 }
 
-.carousel {
+.main-container {
 	margin-top: 140px;
 }
 
@@ -142,6 +152,13 @@ h3 {
 @font-face {
 	font-family: 'telugu2';
 	src: url('../fonts/Mandali-Regular.ttf');
+	font-style: bold;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'heading';
+	src: url('../fonts/TimmanaRegular.ttf');
 	font-style: bold;
 	font-weight: 500;
 }
@@ -719,6 +736,56 @@ body.modal-open--orderprinting .modal-orderprint .modal-body {
 	font-size: 10px;
 	text-transform: capitalize;
 	vertical-align: middle;
+}
+
+.tdp__complaint {
+	margin-top: 2.7rem;
+}
+
+.tdp__complaint .fas {
+	font-size: 7rem;
+}
+
+.tdp__complaint p {
+	font-size: 24px;
+}
+
+.tdp__complaint .box {
+	background: #fed211;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.about-us__accordion .card {
+	font-family: 'heading';
+	margin-bottom: 15px;
+}
+
+.about-us__accordion .card .btn-link {
+	color: #131516;
+	width: 100%;
+	text-align: left;
+	font-size: 20px;
+}
+
+.about-us__accordion .card .btn-link::after {
+	content: "\2212";
+	color: #131516;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+	font-family: auto;
+	font-size: 20px;
+}
+
+.about-us__accordion .card .btn-link.collapsed::after {
+	content: '\002B';
+	color: #131516;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+	font-family: auto;
+	font-size: 20px;
 }
 
 @media (min-width : 992px) {
