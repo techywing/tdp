@@ -13,7 +13,10 @@ h3{
 .carousel{
 	&-inner{
 		height: 400px;
-	}
+    @media @extraSmallDevices  {
+            height: auto;
+    }
+ }
 }
 .footer{
     width: 100%;
@@ -87,9 +90,7 @@ h3{
                 }
             }
         }
-
         &:checked {
-
             & + label {
 
                 &:after {

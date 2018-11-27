@@ -756,6 +756,14 @@ body.modal-open--orderprinting .modal-orderprint .modal-body {
 	border-radius: 4px;
 }
 
+.tdp__socialstream--fb iframe {
+	width: 315px;
+}
+
+.tdp__socialstream--twitter iframe {
+	width: 315px;
+}
+
 .about-us__accordion .card {
 	font-family: 'heading';
 	margin-bottom: 15px;
@@ -766,6 +774,10 @@ body.modal-open--orderprinting .modal-orderprint .modal-body {
 	width: 100%;
 	text-align: left;
 	font-size: 20px;
+}
+
+.about-us__accordion .card .btn-link:hover {
+	text-decoration: none;
 }
 
 .about-us__accordion .card .btn-link::after {
@@ -788,6 +800,39 @@ body.modal-open--orderprinting .modal-orderprint .modal-body {
 	font-size: 20px;
 }
 
+.about-us__accordion .card .card-body ul p {
+	line-height: 2;
+	padding: 5px 0 0 0;
+	font-size: 16px;
+	text-align: center;
+}
+
+.gallery__img {
+	display: inline-block;
+	flex: 0 0 24%;
+	max-width: 24%;
+}
+
+.gallery__img img {
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+}
+
+.gallery__change img {
+	width: 420px;
+	height: 420px;
+	margin: 10px;
+}
+
+.contactus__title {
+	padding: 10px;
+}
+
+.contactus__title h1 {
+	text-align: center;
+}
+
 @media (min-width : 992px) {
 
 .cancellation-modal__form .modal-body {
@@ -808,6 +853,14 @@ body.modal-open--orderprinting .modal-orderprint .modal-body {
 
 .cancellation-modal__form .modal-action .btn {
 	margin-bottom: 20px;
+}
+
+}
+
+@media (max-width : 575.98px) {
+
+.carousel-inner {
+	height: auto;
 }
 
 }

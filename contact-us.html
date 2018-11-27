@@ -1,0 +1,124 @@
+<html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<title>contact-Us | TDP</title>
+<link rel="shortcut icon" href="_ui/responsive/common/images/favicon.ico" type="images">
+<link rel="icon" href="favicon.png" />
+<link rel="apple-touch-icon" href="favicon.png"/>
+<!-- Bootstrap -->
+<link href="_ui/responsive/common/css/bootstrap.4.0.0.min.css" rel="stylesheet">
+<link href="_ui/responsive/common/css/jquery.dataTables-1.10.16.min.css" rel="stylesheet">
+<link href="_ui/responsive/common/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+<link href="_ui/responsive/common/css/owl.carousel.css" rel="stylesheet">
+<link href="_ui/responsive/common/css/owl.theme.css" rel="stylesheet">
+<link href="_ui/responsive/common/css/owl.transitions.css" rel="stylesheet">
+<link href="_ui/responsive/common/css/style.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="_ui\responsive\common\images\tdp-logo.png" alt="logo" class="logo">
+          </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-capitalize">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">gallery</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="videos.html">Vedios</a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="contact-us.html">contact us</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="container-fluid">
+    <div class="main-container">
+      <div class="row">
+        <div class="col-sm-12 contactus">
+                <div class="contactus__title">
+                        <h1>Get Touch With Us</h1>
+                    </div>
+            <div class="row">
+            <div class="col-lg-8 contactus__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15273.165845190782!2d81.9303837!3d16.8614706!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7107f874fc5f3b8a!2sTelugu+Desam+Party+Office!5e0!3m2!1sen!2sin!4v1543134303672" width="100%"  height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-4">
+                <form action="" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="user"  data-validation="length alphanumeric"  data-validation-length="3-12"  data-validation-error-msg="User name has to be an alphanumeric value (3-12 chars)" class="form-control" placeholder="Name">
+                    </div>
+                   <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email"  data-validation="email" class="form-control" placeholder="Email">
+                   </div>
+                   <div class="form-group"> 
+                        <label for="Phone Number">Phone Number:</label>   
+                        <input type="text" class="form-control"  data-validation="numeric" placeholder="Phone Number"  data-validation-error-msg="Phone number has not numeric">
+                   </div>
+                   <div class="form-group">
+                        <textarea class="form-control" id="comments" name="comments"></textarea>
+                        <span id="pres-max-length">1000</span> characters left
+                   </div>  
+                   <button type="submit" class="btn btn-primary">Submit</button> 
+                </form>
+            </div>
+        </div>
+        </div>
+     </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container-fluid row">
+        <div class="col-sm-6">
+        </div>
+        <div class="col-sm-6">
+            <address class="text-white float-right">
+                తెలుగుదేశం పార్టి కార్యాలయం,<br>
+                మండపేట నియోజకవర్గం,<br>
+                డోర్.నెం.20-5-7,<br>
+                రధం సెంటర్,<br>
+                మండపేట – 533308,<br>
+                తూర్పుగోదావరి జిల్లా,<br>
+                ఆంధ్రప్రదేశ్
+            </address>
+        </div>
+    </div>
+  </footer>
+  </footer>
+  <script type="text/javascript">
+    var ACC = {
+      config: {}
+    };
+  </script>
+  <script src="_ui/responsive/common/js/combined.min.js"></script>
+  <script src="_ui/responsive/common/js/_autoload.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+  <script>
+        $.validate({      
+        });
+        $('#comments').restrictLength( $('#pres-max-length') );
+    </script>
+      
+</body>
+
+</html>
