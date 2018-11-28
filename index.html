@@ -17,6 +17,7 @@
 <link href="_ui/responsive/common/css/owl.transitions.css" rel="stylesheet">
 <link href="_ui/responsive/common/css/style.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -213,7 +214,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center box mb-3">
                     <i class="fas fa-box"></i>
-                    <p>Complaint Box</p>
+                    <p data-toggle="modal" data-target="#complaintBox">Complaint Box</p>
                 </div>
                 <div class="col-sm-12 text-center box">
                     <i class="fas fa-poll"></i>
@@ -227,22 +228,69 @@
   </div>
   <footer class="footer">
     <div class="container-fluid row">
-        <div class="col-sm-6">
-        </div>
-        <div class="col-sm-6">
-            <address class="text-white float-right">
-                తెలుగుదేశం పార్టి కార్యాలయం,<br>
-                మండపేట నియోజకవర్గం,<br>
-                డోర్.నెం.20-5-7,<br>
-                రధం సెంటర్,<br>
-                మండపేట – 533308,<br>
-                తూర్పుగోదావరి జిల్లా,<br>
+        <div class="col-sm-12 text-center pt-3 footer-social">
+            <div class="footer-social__media">
+                <a href="javascript:void(0)" class="fa fa-facebook"></a>
+                <a href="javascript:void(0)" class="fa fa-twitter"></a>
+                <a href="javascript:void(0)" class="fa fa-google"></a>
+                <a href="javascript:void(0)" class="fa fa-youtube"></a>
+            </div>
+            <address class="text-white">
+                తెలుగుదేశం పార్టి కార్యాలయం, మండపేట నియోజకవర్గం,<br>
+                డోర్.నెం.20-5-7, రధం సెంటర్,<br>
+                మండపేట – 533308, తూర్పుగోదావరి జిల్లా,<br>
                 ఆంధ్రప్రదేశ్
             </address>
+            <P class="hosted">developed and hosted by <a href="www.techywing.com" >Techywing solutions</a></P>
         </div>
     </div>
   </footer>
-  </footer>
+  <div class="modal" id="complaintBox"tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">ఫిర్యాదు రూపం</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+              <div class="form-group">
+                  <label  for="complaintName" class="">పేరు:</label>
+                  <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label  for="complaintEmail" class="">ఇ-మెయిల్:</label>
+                  <input type="Email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label  for="complaintPhone" class="">ఫోను నంబరు:</label>
+                  <input type="text" class="form-control" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                  <label  for="complaintType" class="">ఫిర్యాదు రకం:</label>
+                  <select class="form-control">
+                    <option>option 1</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label  for="complaintSubject" class="">ఫిర్యాదు విషయం:</label>
+                  <input type="text" class="form-control" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                  <label for="complaint" class="">ఫిర్యాదు:</label>
+                 <textarea class="form-control" row="3"></textarea>
+                </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script type="text/javascript">
     var ACC = {
       config: {}

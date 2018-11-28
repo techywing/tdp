@@ -10,6 +10,13 @@ h3{
 .main-container{
     margin-top:140px;
 }
+.error{
+    border-color:@salmon-red;
+}
+.form-error{
+    font-size:@fontSize12;
+    color:@salmon-red;
+}
 .carousel{
 	&-inner{
 		height: 400px;
@@ -98,5 +105,31 @@ h3{
                 }
             }
         }
+    }
+}
+.footer-social{
+    &__media{
+        a{
+            background:@white;
+            padding: 10px;
+            border-radius: 50%;
+            color:@black;
+            margin-right: 10px;
+        }
+    }
+    .hosted{
+        text-transform:capitalize;
+        text-align: right;
+        font-size: @fontSize12;
+        padding-top: 22px;
+        font-weight: 500;
+        margin:0px;
+    }
+    .copywrite{
+        text-transform:capitalize;
+        text-align: left;
+        font-size: @fontSize12;
+        padding-top: 22px;
+        font-weight: 500;
     }
 }

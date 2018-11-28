@@ -16,7 +16,7 @@
 <link href="_ui/responsive/common/css/owl.theme.css" rel="stylesheet">
 <link href="_ui/responsive/common/css/owl.transitions.css" rel="stylesheet">
 <link href="_ui/responsive/common/css/style.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -73,14 +73,17 @@
                    </div>
                    <div class="form-group"> 
                         <label for="Phone Number">Phone Number:</label>   
-                        <input type="text" class="form-control"  data-validation="numeric" placeholder="Phone Number"  data-validation-error-msg="Phone number has not numeric">
+                        <input type="text" name="num" class="form-control"  data-validation="number" placeholder="Phone Number"  data-validation-error-msg="Phone number has not numeric">
                    </div>
                    <div class="form-group">
+                        <label for="Comments">Comments:</label>   
                         <textarea class="form-control" id="comments" name="comments"></textarea>
                         <span id="pres-max-length">1000</span> characters left
-                   </div>  
-                   <button type="submit" class="btn btn-primary">Submit</button> 
-                </form>
+                   </div>
+                   <div class="text-right">
+                    <button type="submit" class="btn btn-primary">Submit</button> 
+                   </div>
+                 </form>
             </div>
         </div>
         </div>
@@ -89,18 +92,20 @@
   </div>
   <footer class="footer">
     <div class="container-fluid row">
-        <div class="col-sm-6">
-        </div>
-        <div class="col-sm-6">
-            <address class="text-white float-right">
-                తెలుగుదేశం పార్టి కార్యాలయం,<br>
-                మండపేట నియోజకవర్గం,<br>
-                డోర్.నెం.20-5-7,<br>
-                రధం సెంటర్,<br>
-                మండపేట – 533308,<br>
-                తూర్పుగోదావరి జిల్లా,<br>
+        <div class="col-sm-12 text-center pt-3 footer-social">
+            <div class="footer-social__media">
+                <a href="javascript:void(0)" class="fa fa-facebook"></a>
+                <a href="javascript:void(0)" class="fa fa-twitter"></a>
+                <a href="javascript:void(0)" class="fa fa-google"></a>
+                <a href="javascript:void(0)" class="fa fa-youtube"></a>
+            </div>
+            <address class="text-white">
+                తెలుగుదేశం పార్టి కార్యాలయం, మండపేట నియోజకవర్గం,<br>
+                డోర్.నెం.20-5-7, రధం సెంటర్,<br>
+                మండపేట – 533308, తూర్పుగోదావరి జిల్లా,<br>
                 ఆంధ్రప్రదేశ్
             </address>
+            <P class="hosted">developed and hosted by <a href="www.techywing.com">Techywing solutions</a></P>
         </div>
     </div>
   </footer>
