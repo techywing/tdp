@@ -41,7 +41,7 @@
                         <a class="nav-link" href="gallery.html">gallery</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="videos.html">Vedios</a>
+                            <a class="nav-link" href="videos.html">videos</a>
                         </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact-us.html">contact us</a>
@@ -55,30 +55,45 @@
                 <div class="col-sm-12 gallery">
                     <div class="row">
                         <div class="col-sm-8">
-                        <div class="col-sm-3 gallery__img">
+                        <div class="col-sm-2 gallery__img">
+                            <img src="_ui/responsive/common/images/gallery-1.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-sm-2 gallery__img">
+                            <img src="_ui/responsive/common/images/gallery-2.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-sm-2 gallery__img">
+                            <img src="_ui/responsive/common/images/gallery-3.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-sm-2 gallery__img">
+                            <img src="_ui/responsive/common/images/gallery-4.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-sm-2 gallery__img">
                             <img src="_ui/responsive/common/images/gallery-01.png" class="img-responsive">
                         </div>
-                        <div class="col-sm-3 gallery__img">
+                        <div class="col-sm-2 gallery__img">
                             <img src="_ui/responsive/common/images/gallery-01.png" class="img-responsive">
                         </div>
-                        <div class="col-sm-3 gallery__img">
+                        <div class="col-sm-2 gallery__img">
                             <img src="_ui/responsive/common/images/gallery-01.png" class="img-responsive">
                         </div>
-                        <div class="col-sm-3 gallery__img">
+                        <div class="col-sm-2 gallery__img">
                             <img src="_ui/responsive/common/images/gallery-01.png" class="img-responsive">
                         </div>
-                        <div class="col-sm-3 gallery__img">
-                            <img src="_ui/responsive/common/images/gallery-01.png" class="img-responsive">
-                        </div>
-                        <div class="col-sm-3 gallery__img">
-                            <img src="_ui/responsive/common/images/gallery-01.png" class="img-responsive">
-                        </div>
-                        <div class="col-sm-3 gallery__img">
-                            <img src="_ui/responsive/common/images/gallery-01.png" class="img-responsive">
-                        </div>
-                        <div class="col-sm-3 gallery__img">
-                            <img src="_ui/responsive/common/images/gallery-01.png" class="img-responsive">
-                        </div>
+                        <div class="col-sm-2 gallery__img">
+                                <img src="_ui/responsive/common/images/gallery-1.jpg" class="img-responsive">
+                            </div>
+                            <div class="col-sm-2 gallery__img">
+                                <img src="_ui/responsive/common/images/gallery-2.jpg" class="img-responsive">
+                            </div>
+                            <div class="col-sm-2 gallery__img">
+                                <img src="_ui/responsive/common/images/gallery-3.jpg" class="img-responsive">
+                            </div>
+                            <div class="col-sm-2 gallery__img">
+                                <img src="_ui/responsive/common/images/gallery-4.jpg" class="img-responsive">
+                            </div>
+                            <div class="col-sm-2 gallery__img">
+                                <img src="_ui/responsive/common/images/gallery-01.png" class="img-responsive">
+                            </div>
                     </div>
                     <div class="col-sm-4 gallery__change">
                         <img src="_ui/responsive/common/images/change-img.png" class="img-responsive">
@@ -113,8 +128,13 @@
         };
     </script>
     <script src="_ui/responsive/common/js/combined.min.js"></script>
-    <script src="_ui/responsive/common/js/_autoload.js"></script>
+    <script src="_ui/ryesponsive/common/js/_autoload.js"></script>
     <script src="_ui/responsive/common/js/owl.carousel.js"></script>
+    <script>
+        $('.gallery__img img').on('click',function(){
+            $('.gallery__change img').prop('src',this.src);
+        })
+    </script>
 
 </body>
 
