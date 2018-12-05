@@ -745,3 +745,23 @@ body.modal-open--orderprinting .modal-orderprint .modal-body {
 .contactus__title h1 {
   text-align: center;
 }
+.admin-panel .notification {
+  width: 88%;
+  font-size: 35px;
+  color: #fed211;
+}
+.admin-panel__block {
+  height: 150px;
+  text-align: center;
+  border-radius: 35px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.admin-panel__block i {
+  font-size: 100px;
+}
+.admin-panel__block p {
+  font-size: 20px;
+  font-weight: 500;
+}

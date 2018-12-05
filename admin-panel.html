@@ -1,0 +1,301 @@
+<html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<title>Admin-panel | TDP</title>
+<link rel="shortcut icon" href="_ui/responsive/common/images/favicon.ico" type="images">
+<link rel="icon" href="favicon.png" />
+<link rel="apple-touch-icon" href="favicon.png" />
+<!-- Bootstrap -->
+<link href="_ui/responsive/common/css/bootstrap.4.0.0.min.css" rel="stylesheet">
+<link href="_ui\responsive\common\css\jquery.dataTables-1.10.16.min.css" rel="stylesheet">
+<link href="_ui/responsive/common/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+<link href="_ui/responsive/common/css/owl.carousel.css" rel="stylesheet">
+<link href="_ui/responsive/common/css/owl.theme.css" rel="stylesheet">
+<link href="_ui/responsive/common/css/owl.transitions.css" rel="stylesheet">
+<link href="_ui/responsive/common/css/style.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+            <a class="navbar-brand m-auto" href="#">
+                <img src="_ui\responsive\common\images\tdp-logo.png" alt="logo" class="logo">
+            </a>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="main-container admin-panel">
+            <h2 class="text-center">Admin Panel</h2>
+            <p class="text-right notification"><i class="fas fa-bell"></i></p>
+            <div class="col-sm-8 m-auto">
+                <div class="row">
+                    <div class="col admin-panel__block" id="news" style="background:#ee5253">
+                        <i class="far fa-newspaper"></i>
+                        <p>News</p>
+                    </div>
+                    <div class="col admin-panel__block" id="newsArtical" style="background:#ff9f43">
+                        <i class="far fa-file-alt"></i>
+                        <p>News Articals</p>
+                    </div>
+                    <div class="col admin-panel__block" id="contactUs" style="background:#feca57">
+                        <i class="far fa-address-card"></i>
+                        <p>Contact Us</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col admin-panel__block" id="complaintBox" style="background:#00d2d3">
+                        <i class="fab fa-wpforms"></i>
+                        <p>Complaint Box</p>
+                    </div>
+                    <div class="col admin-panel__block" id="videos" style="background:#1dd1a1">
+                        <i class="fas fa-video"></i>
+                        <p>Videos</p>
+                    </div>
+                    <div class="col admin-panel__block" id="onlineSurvey" style="background:#ff6b6b">
+                        <i class="far fa-file-alt"></i>
+                        <p>Online Survey</p>
+                    </div>
+                </div>
+            </div>
+            <div class="admin-panel__inner">
+            <div class="col-sm-4 m-auto admin-panel__survey d-none">
+                <p class="m-0 text-center">Online Survey Report</p>
+                <canvas id="myChart" class="m-auto pt-4 pb-4"></canvas>
+            </div>
+            <div class="col-sm-4 m-auto admin-panel__news d-none">
+                <h3 class="text-center">తాజా కార్యక్రమం</h3>
+                <form action="">
+                    <div class="form-group">
+                        <label for="news">News</label>
+                        <input type="text" maxlength="100" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" class="form-control" name="date" min="2000-01-02">
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Image</label>
+                        <input type="file" class="form-control" name="myFile">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-4 m-auto admin-panel__newsartical d-none">
+                <h3 class="text-center">తాజా వార్తల కథనాలు</h3>
+                <form action="">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" maxlength="100" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="artical">News Artical</label>
+                        <textarea class="form-control" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Image</label>
+                        <input type="file" class="form-control" name="myFile">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-8 m-auto admin-panel__contact d-none">
+                <h3 class="text-center">Contact US</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped datatable" data-page-length="10" id="contactDatable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Mobile</th>
+                                <th>Comment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>xxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxx</td>
+                            </tr>
+                            <tr>
+                                <td>xxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxx</td>
+                            </tr>
+                            <tr>
+                                <td>xxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxx</td>
+                            </tr>
+                            <tr>
+                                <td>xxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxx</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-12 m-auto admin-panel__compaint d-none">
+                <h3 class="text-center">Complaints</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped datatable" data-page-length="10" id="compaintDatable">
+                        <thead>
+                            <tr>
+                                <th>పేరు</th>
+                                <th>ఇ-మెయిల్</th>
+                                <th>ఫోను నంబరు</th>
+                                <th>ఫిర్యాదు రకం</th>
+                                <th>ఫిర్యాదు విషయం</th>
+                                <th>ఫిర్యాదు</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>xxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxx</td>
+                            </tr>
+                            <tr>
+                                <td>xxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxx</td>
+                            </tr>
+                            <tr>
+                                <td>xxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxx</td>
+                            </tr>
+                            <tr>
+                                <td>xxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxx</td>
+                                <td>xxxxxxxxxx</td>
+                                <td>xxxxxxxxx</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-6 m-auto admin-panel__video d-none">
+                <h3 class="text-center">Videos</h3>
+                <div class="form-group">
+                    <label for="image">Video Code</label>
+                    <textarea class="form-control" rows="6"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="container-fluid row">
+            <div class="col-sm-12 text-center pt-3 footer-social">
+                <div class="footer-social__media">
+                    <a href="javascript:void(0)" class="fa fa-facebook"></a>
+                    <a href="javascript:void(0)" class="fa fa-twitter"></a>
+                    <a href="javascript:void(0)" class="fa fa-google"></a>
+                    <a href="javascript:void(0)" class="fa fa-youtube"></a>
+                </div>
+                <address class="text-white">
+                    తెలుగుదేశం పార్టి కార్యాలయం, మండపేట నియోజకవర్గం,<br>
+                    డోర్.నెం.20-5-7, రధం సెంటర్,<br>
+                    మండపేట – 533308, తూర్పుగోదావరి జిల్లా,<br>
+                    ఆంధ్రప్రదేశ్
+                </address>
+                <P class="hosted">developed and hosted by <a href="www.techywing.com">Techywing solutions</a></P>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        var ACC = {
+            config: {}
+        };
+    </script>
+    <script src="_ui/responsive/common/js/combined.min.js"></script>
+    <script src="_ui/responsive/common/js/_autoload.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script>
+        var ctx = document.getElementById("myChart");
+        var myDoughnutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ["Red", "Blue", "Yellow"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            }
+        });
+        $(document).ready(function () {
+            $('.admin-panel__block').on('click', function (e) {
+                e.preventDefault();
+                $('body, html').animate({ scrollTop: $('.admin-panel__inner').offset().top - 120 }, 2000);
+            });
+        });
+
+        $('#news').on('click', function (e) {
+            $('.admin-panel__news').removeClass('d-none');
+            $("admin-panel__video,.admin-panel__contact,.admin-panel__newsartical,.admin-panel__survey").addClass('d-none');
+        });
+        $('#newsArtical').on('click', function () {
+            $('.admin-panel__newsartical').removeClass('d-none');
+            $(".admin-panel__compaint,.admin-panel__video,.admin-panel__contact,.admin-panel__news,.admin-panel__survey").addClass('d-none');
+        });
+        $('#contactUs').on('click', function () {
+            $('.admin-panel__contact').removeClass('d-none');
+            $(".admin-panel__compaint,.admin-panel__video,.admin-panel__newsartical,.admin-panel__news,.admin-panel__survey").addClass('d-none');
+        });
+        $('#complaintBox').on('click', function () {
+            $('.admin-panel__compaint').removeClass('d-none');
+            $(".admin-panel__video,.admin-panel__newsartical,.admin-panel__news,.admin-panel__survey,.admin-panel__contact").addClass('d-none');
+        });
+        $('#videos').on('click', function () {
+            $('.admin-panel__video').removeClass('d-none');
+            $(".admin-panel__compaint,.admin-panel__contact,.admin-panel__newsartical,.admin-panel__news,.admin-panel__survey").addClass('d-none');
+        });
+        $('#onlineSurvey').on('click', function () {
+            $('.admin-panel__survey').removeClass('d-none');
+            $(".admin-panel__compaint,.admin-panel__video,.admin-panel__newsartical,.admin-panel__news").addClass('d-none');
+        });
+        $('#contactDatable,#compaintDatable').dataTable({
+            bFilter: false,
+            bInfo: false,
+            "bLengthChange": false,
+            "ordering": true
+        })
+    </script>
+</body>
+
+</html>
