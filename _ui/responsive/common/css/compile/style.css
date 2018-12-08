@@ -275,6 +275,7 @@ h3 {
 	background: #fed211;
 	padding: 10px;
 	border-radius: 4px;
+	cursor: pointer;
 }
 
 .tdp__socialstream--fb iframe {
@@ -354,6 +355,13 @@ h3 {
 	text-align: center;
 }
 
+.admin-panel {
+	background-image: url(../images/adminbg.png);
+	background-size: cover;
+	height: auto;
+	margin: 115px -15px 0 -15px;
+}
+
 .admin-panel .notification {
 	width: 88%;
 	font-size: 35px;
@@ -376,6 +384,31 @@ h3 {
 .admin-panel__block p {
 	font-size: 20px;
 	font-weight: 500;
+}
+
+.admin-panel__login {
+	height: 500px;
+	background: #131516;
+	opacity: 0.5;
+	padding: 3rem;
+	color: #FFFFFF;
+}
+
+.admin-panel__login p {
+	font-size: 24px;
+}
+
+.admin-panel .bg-color {
+	background: #FFFFFF;
+	border-radius: 10px;
+}
+
+.admin-panel h1 {
+	font-size: 40px;
+	color: #ed3627;
+	text-align: center;
+	font-family: 'telugu';
+	line-height: 10;
 }
 
 @media (max-width : 575.98px) {

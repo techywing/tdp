@@ -64,11 +64,11 @@
                 </div>
             </div>
             <div class="admin-panel__inner">
-            <div class="col-sm-4 m-auto admin-panel__survey d-none">
+            <div class="col-sm-4 m-auto admin-panel__survey d-none bg-color">
                 <p class="m-0 text-center">Online Survey Report</p>
                 <canvas id="myChart" class="m-auto pt-4 pb-4"></canvas>
             </div>
-            <div class="col-sm-4 m-auto admin-panel__news d-none">
+            <div class="col-sm-4 m-auto admin-panel__news d-none bg-color">
                 <h3 class="text-center">తాజా కార్యక్రమం</h3>
                 <form action="">
                     <div class="form-group">
@@ -86,7 +86,7 @@
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
-            <div class="col-sm-4 m-auto admin-panel__newsartical d-none">
+            <div class="col-sm-4 m-auto admin-panel__newsartical d-none bg-color">
                 <h3 class="text-center">తాజా వార్తల కథనాలు</h3>
                 <form action="">
                     <div class="form-group">
@@ -104,7 +104,7 @@
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
-            <div class="col-sm-8 m-auto admin-panel__contact d-none">
+            <div class="col-sm-8 m-auto admin-panel__contact d-none bg-color">
                 <h3 class="text-center">Contact US</h3>
                 <div class="table-responsive">
                     <table class="table table-striped datatable" data-page-length="10" id="contactDatable">
@@ -145,7 +145,7 @@
                     </table>
                 </div>
             </div>
-            <div class="col-sm-12 m-auto admin-panel__compaint d-none">
+            <div class="col-sm-12 m-auto admin-panel__compaint d-none bg-color">
                 <h3 class="text-center">Complaints</h3>
                 <div class="table-responsive">
                     <table class="table table-striped datatable" data-page-length="10" id="compaintDatable">
@@ -196,7 +196,7 @@
                     </table>
                 </div>
             </div>
-            <div class="col-sm-6 m-auto admin-panel__video d-none">
+            <div class="col-sm-6 m-auto admin-panel__video d-none bg-color">
                 <h3 class="text-center">Videos</h3>
                 <div class="form-group">
                     <label for="image">Video Code</label>
@@ -267,7 +267,7 @@
 
         $('#news').on('click', function (e) {
             $('.admin-panel__news').removeClass('d-none');
-            $("admin-panel__video,.admin-panel__contact,.admin-panel__newsartical,.admin-panel__survey").addClass('d-none');
+            $(".admin-panel__video,.admin-panel__contact,.admin-panel__newsartical,.admin-panel__survey").addClass('d-none');
         });
         $('#newsArtical').on('click', function () {
             $('.admin-panel__newsartical').removeClass('d-none');
