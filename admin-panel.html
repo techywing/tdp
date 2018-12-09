@@ -366,18 +366,25 @@
             $('#newsDatatable').addClass('d-none');
             $('#articleDatatable').addClass('d-none');
             $('#newsDatatable_wrapper').parent().addClass('d-none')
+            $('#articleDatatable_wrapper').parent().addClass('d-none')
             $(".admin-panel__compaint,.admin-panel__video,.admin-panel__newsarticle,.admin-panel__news,.admin-panel__survey").addClass('d-none');
         });
         $('#complaintBox').on('click', function () {
             $('.admin-panel__compaint').removeClass('d-none');
+            $('#newsDatatable_wrapper').parent().addClass('d-none')
+            $('#articleDatatable_wrapper').parent().addClass('d-none')
             $(".admin-panel__video,.admin-panel__newsarticle,.admin-panel__news,.admin-panel__survey,.admin-panel__contact").addClass('d-none');
         });
         $('#videos').on('click', function () {
             $('.admin-panel__video').removeClass('d-none');
+            $('#newsDatatable_wrapper').parent().addClass('d-none')
+            $('#articleDatatable_wrapper').parent().addClass('d-none')
             $(".admin-panel__compaint,.admin-panel__contact,.admin-panel__newsarticle,.admin-panel__news,.admin-panel__survey").addClass('d-none');
         });
         $('#onlineSurvey').on('click', function () {
             $('.admin-panel__survey').removeClass('d-none');
+            $('#newsDatatable_wrapper').parent().addClass('d-none')
+            $('#articleDatatable_wrapper').parent().addClass('d-none')
             $(".admin-panel__compaint,.admin-panel__video,.admin-panel__newsarticle,.admin-panel__news").addClass('d-none');
         });
         $('#contactDatatable,#compaintDatable,#newsDatatable,#articleDatatable').dataTable({
