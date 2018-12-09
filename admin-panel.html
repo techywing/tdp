@@ -39,9 +39,9 @@
                         <i class="far fa-newspaper"></i>
                         <p>News</p>
                     </div>
-                    <div class="col admin-panel__block" id="newsArtical" style="background:#ff9f43">
+                    <div class="col admin-panel__block" id="newsarticle" style="background:#ff9f43">
                         <i class="far fa-file-alt"></i>
-                        <p>News Articals</p>
+                        <p>News articles</p>
                     </div>
                     <div class="col admin-panel__block" id="contactUs" style="background:#feca57">
                         <i class="far fa-address-card"></i>
@@ -64,149 +64,229 @@
                 </div>
             </div>
             <div class="admin-panel__inner">
-            <div class="col-sm-4 m-auto admin-panel__survey d-none bg-color">
-                <p class="m-0 text-center">Online Survey Report</p>
-                <canvas id="myChart" class="m-auto pt-4 pb-4"></canvas>
-            </div>
-            <div class="col-sm-4 m-auto admin-panel__news d-none bg-color">
-                <h3 class="text-center">తాజా కార్యక్రమం</h3>
-                <form action="">
-                    <div class="form-group">
-                        <label for="news">News</label>
-                        <input type="text" maxlength="100" class="form-control">
+                <div class="col-sm-4 m-auto admin-panel__survey d-none bg-color">
+                    <p class="m-0 text-center">Online Survey Report</p>
+                    <canvas id="myChart" class="m-auto pt-4 pb-4"></canvas>
+                </div>
+                <div class="col-sm-12">
+                    <div class="col-sm-4 m-auto admin-panel__news d-none bg-color">
+                        <h3 class="text-center">తాజా కార్యక్రమం</h3>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="news">News</label>
+                                <input type="text" maxlength="100" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" class="form-control" name="date" min="2000-01-02">
+                            </div>
+                            <div class="form-group">
+                                <label for="image">Image</label>
+                                <input type="file" class="form-control" name="myFile">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="date">Date</label>
-                        <input type="date" class="form-control" name="date" min="2000-01-02">
+                    <div class="table-responsive bg-color d-none">
+                        <table class="table table-striped datatable d-none" data-page-length="10" id="newsDatatable">
+                            <thead>
+                                <tr>
+                                    <th>News</th>
+                                    <th>Date</th>
+                                    <th>Image</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td><img src="_ui/responsive/common/images/03.jpg"  width="220px" height="85px"></td>
+                                    <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td><img src="_ui/responsive/common/images/03.jpg" width="220px" height="85px"></td>
+                                    <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td><img src="_ui/responsive/common/images/03.jpg" width="220px" height="85px"></td>
+                                    <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td><img src="_ui/responsive/common/images/03.jpg" width="220px" height="85px"></td>
+                                    <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="col-sm-4 m-auto admin-panel__newsarticle d-none bg-color">
+                        <h3 class="text-center">తాజా వార్తల కథనాలు</h3>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="text" maxlength="100" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="article">News Article</label>
+                                <textarea class="form-control" rows="5"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="image">Image</label>
+                                <input type="file" class="form-control" name="myFile">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="table-responsive bg-color d-none">
+                        <table class="table table-striped datatable d-none" data-page-length="10" id="articleDatatable">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>News Article</th>
+                                    <th>Image</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td><img src="_ui/responsive/common/images/03.jpg" width="220px" height="85px"></td>
+                                    <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td><img src="_ui/responsive/common/images/03.jpg" width="220px" height="85px"></td>
+                                    <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td><img src="_ui/responsive/common/images/03.jpg" width="220px" height="85px"></td>
+                                    <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td><img src="_ui/responsive/common/images/03.jpg" width="220px" height="85px"></td>
+                                    <td><button type="button" class="btn btn-danger">Delete</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm-8 m-auto admin-panel__contact d-none bg-color">
+                    <h3 class="text-center">Contact US</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped datatable" data-page-length="10" id="contactDatatable">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Mobile</th>
+                                    <th>Comment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm-12 m-auto admin-panel__compaint d-none bg-color">
+                    <h3 class="text-center">Complaints</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped datatable" data-page-length="10" id="compaintDatable">
+                            <thead>
+                                <tr>
+                                    <th>పేరు</th>
+                                    <th>ఇ-మెయిల్</th>
+                                    <th>ఫోను నంబరు</th>
+                                    <th>ఫిర్యాదు రకం</th>
+                                    <th>ఫిర్యాదు విషయం</th>
+                                    <th>ఫిర్యాదు</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm-6 m-auto admin-panel__video d-none bg-color">
+                    <h3 class="text-center">Videos</h3>
                     <div class="form-group">
-                        <label for="image">Image</label>
-                        <input type="file" class="form-control" name="myFile">
+                        <label for="image">Video Code</label>
+                        <textarea class="form-control" rows="6"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-            <div class="col-sm-4 m-auto admin-panel__newsartical d-none bg-color">
-                <h3 class="text-center">తాజా వార్తల కథనాలు</h3>
-                <form action="">
-                    <div class="form-group">
-                        <label for="title">Title</label>
-                        <input type="text" maxlength="100" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="artical">News Artical</label>
-                        <textarea class="form-control" rows="5"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="image">Image</label>
-                        <input type="file" class="form-control" name="myFile">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-            <div class="col-sm-8 m-auto admin-panel__contact d-none bg-color">
-                <h3 class="text-center">Contact US</h3>
-                <div class="table-responsive">
-                    <table class="table table-striped datatable" data-page-length="10" id="contactDatable">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Mobile</th>
-                                <th>Comment</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>xxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxx</td>
-                            </tr>
-                            <tr>
-                                <td>xxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxx</td>
-                            </tr>
-                            <tr>
-                                <td>xxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxx</td>
-                            </tr>
-                            <tr>
-                                <td>xxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxx</td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
-            </div>
-            <div class="col-sm-12 m-auto admin-panel__compaint d-none bg-color">
-                <h3 class="text-center">Complaints</h3>
-                <div class="table-responsive">
-                    <table class="table table-striped datatable" data-page-length="10" id="compaintDatable">
-                        <thead>
-                            <tr>
-                                <th>పేరు</th>
-                                <th>ఇ-మెయిల్</th>
-                                <th>ఫోను నంబరు</th>
-                                <th>ఫిర్యాదు రకం</th>
-                                <th>ఫిర్యాదు విషయం</th>
-                                <th>ఫిర్యాదు</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>xxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxx</td>
-                            </tr>
-                            <tr>
-                                <td>xxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxx</td>
-                            </tr>
-                            <tr>
-                                <td>xxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxx</td>
-                            </tr>
-                            <tr>
-                                <td>xxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxx</td>
-                                <td>xxxxxxxxxx</td>
-                                <td>xxxxxxxxx</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="col-sm-6 m-auto admin-panel__video d-none bg-color">
-                <h3 class="text-center">Videos</h3>
-                <div class="form-group">
-                    <label for="image">Video Code</label>
-                    <textarea class="form-control" rows="6"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </div>
     </div>
-</div>
     <footer class="footer">
         <div class="container-fluid row">
             <div class="col-sm-12 text-center pt-3 footer-social">
@@ -267,29 +347,40 @@
 
         $('#news').on('click', function (e) {
             $('.admin-panel__news').removeClass('d-none');
-            $(".admin-panel__video,.admin-panel__contact,.admin-panel__newsartical,.admin-panel__survey").addClass('d-none');
+            $('#newsDatatable').removeClass('d-none');
+            $('#articleDatatable').addClass('d-none');
+            $('#newsDatatable_wrapper').parent().removeClass('d-none')
+            $('#articleDatatable_wrapper').parent().addClass('d-none')
+            $(".admin-panel__video,.admin-panel__contact,.admin-panel__newsarticle,.admin-panel__survey").addClass('d-none');
         });
-        $('#newsArtical').on('click', function () {
-            $('.admin-panel__newsartical').removeClass('d-none');
+        $('#newsarticle').on('click', function () {
+            $('.admin-panel__newsarticle').removeClass('d-none');
+            $('#articleDatatable').removeClass('d-none');
+            $('#newsDatatable').addClass('d-none');
+            $('#newsDatatable_wrapper').parent().addClass('d-none')
+            $('#articleDatatable_wrapper').parent().removeClass('d-none')
             $(".admin-panel__compaint,.admin-panel__video,.admin-panel__contact,.admin-panel__news,.admin-panel__survey").addClass('d-none');
         });
         $('#contactUs').on('click', function () {
             $('.admin-panel__contact').removeClass('d-none');
-            $(".admin-panel__compaint,.admin-panel__video,.admin-panel__newsartical,.admin-panel__news,.admin-panel__survey").addClass('d-none');
+            $('#newsDatatable').addClass('d-none');
+            $('#articleDatatable').addClass('d-none');
+            $('#newsDatatable_wrapper').parent().addClass('d-none')
+            $(".admin-panel__compaint,.admin-panel__video,.admin-panel__newsarticle,.admin-panel__news,.admin-panel__survey").addClass('d-none');
         });
         $('#complaintBox').on('click', function () {
             $('.admin-panel__compaint').removeClass('d-none');
-            $(".admin-panel__video,.admin-panel__newsartical,.admin-panel__news,.admin-panel__survey,.admin-panel__contact").addClass('d-none');
+            $(".admin-panel__video,.admin-panel__newsarticle,.admin-panel__news,.admin-panel__survey,.admin-panel__contact").addClass('d-none');
         });
         $('#videos').on('click', function () {
             $('.admin-panel__video').removeClass('d-none');
-            $(".admin-panel__compaint,.admin-panel__contact,.admin-panel__newsartical,.admin-panel__news,.admin-panel__survey").addClass('d-none');
+            $(".admin-panel__compaint,.admin-panel__contact,.admin-panel__newsarticle,.admin-panel__news,.admin-panel__survey").addClass('d-none');
         });
         $('#onlineSurvey').on('click', function () {
             $('.admin-panel__survey').removeClass('d-none');
-            $(".admin-panel__compaint,.admin-panel__video,.admin-panel__newsartical,.admin-panel__news").addClass('d-none');
+            $(".admin-panel__compaint,.admin-panel__video,.admin-panel__newsarticle,.admin-panel__news").addClass('d-none');
         });
-        $('#contactDatable,#compaintDatable').dataTable({
+        $('#contactDatatable,#compaintDatable,#newsDatatable,#articleDatatable').dataTable({
             bFilter: false,
             bInfo: false,
             "bLengthChange": false,

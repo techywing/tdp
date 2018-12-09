@@ -411,6 +411,13 @@ h3 {
 	line-height: 10;
 }
 
+.admin-panel .table td,
+.admin-panel .table th {
+	padding: 8px 5px;
+	vertical-align: middle;
+	text-align: center;
+}
+
 @media (max-width : 575.98px) {
 
 .carousel-inner {
