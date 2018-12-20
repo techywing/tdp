@@ -3,11 +3,18 @@
         display: inline-block;
         flex: 0 0 18%;
         max-width: 18%;
+        @media @extraSmallDevices{
+            flex: 0 0 45%;
+            max-width: 45%; 
+        }
         img{
             width:150px;
             height:150px;
             padding:10px;
             cursor: pointer;
+            @media @mediumDevicesOnly {
+                width: 100px
+            }
         }
     }
     &__change{
@@ -15,6 +22,14 @@
             width:420px;
             height:420px;
             margin:10px;
+            @media @extraSmallDevices{
+                width:300px;
+                height:300px;
+            }
+            @media @mediumDevicesOnly {
+                width: 215px;
+                height: 285px;
+            }
         }
     }
   
