@@ -303,6 +303,12 @@ h3 {
 	max-width: 450px;
 }
 
+.tdp__history--info p {
+	font-family: 'telugu2';
+	font-size: 14px;
+	font-weight: 600;
+}
+
 .about-us__accordion .card {
 	font-family: 'heading';
 	margin-bottom: 15px;
@@ -455,16 +461,24 @@ h3 {
 	display: none;
 }
 
-}
-
-@media (max-width : 575.98px) {
-
 .carousel-inner {
 	height: auto;
 }
 
+}
+
+@media (max-width : 575.98px) {
+
 .footer-social .hosted {
 	padding: 0;
+}
+
+.tdp__socialstream--fb {
+	max-width: 100%;
+}
+
+.tdp__socialstream--twitter {
+	max-width: 100%;
 }
 
 .gallery__img {

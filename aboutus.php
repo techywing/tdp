@@ -5,62 +5,29 @@
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <meta name="description" content="">
 <title>About Us | TDP</title>
-<link rel="shortcut icon" href="_ui/responsive/common/images/favicon.ico" type="images">
+<link rel="shortcut icon" href="<?php echo base_url()?>/<?php echo base_url()?>/_ui/responsive/common/images/favicon.ico" type="images">
 <link rel="icon" href="favicon.png" />
 <link rel="apple-touch-icon" href="favicon.png" />
 <!-- Bootstrap -->
-<link href="_ui/responsive/common/css/bootstrap.4.0.0.min.css" rel="stylesheet">
-<link href="_ui/responsive/common/css/jquery.dataTables-1.10.16.min.css" rel="stylesheet">
-<link href="_ui/responsive/common/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
-<link href="_ui/responsive/common/css/owl.carousel.css" rel="stylesheet">
-<link href="_ui/responsive/common/css/owl.theme.css" rel="stylesheet">
-<link href="_ui/responsive/common/css/owl.transitions.css" rel="stylesheet">
-<link href="_ui/responsive/common/css/style.min.css" rel="stylesheet">
+<link href="<?php echo base_url()?>/_ui/responsive/common/css/bootstrap.4.0.0.min.css" rel="stylesheet">
+<link href="<?php echo base_url()?>/_ui/responsive/common/css/jquery.dataTables-1.10.16.min.css" rel="stylesheet">
+<link href="<?php echo base_url()?>/_ui/responsive/common/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+<link href="<?php echo base_url()?>/_ui/responsive/common/css/owl.carousel.css" rel="stylesheet">
+<link href="<?php echo base_url()?>/_ui/responsive/common/css/owl.theme.css" rel="stylesheet">
+<link href="<?php echo base_url()?>/_ui/responsive/common/css/owl.transitions.css" rel="stylesheet">
+<link href="<?php echo base_url()?>/_ui/responsive/common/css/style.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="_ui\responsive\common\images\tdp-logo.png" alt="logo" class="logo">
-          </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav text-capitalize">
-              <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="about-us.html">About us</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">gallery</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="videos.html">videos</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="contact-us.html">contact us</a>
-              </li>
-          </ul>
-      </div>
-      <div class="text-right">
-        <img src="_ui/responsive/common/images/kumar.jpg" alt="kumar" class="img-responsive rounded-circle">
-        <img src="_ui/responsive/common/images/lokesh.jpg" alt="mla" class="img-responsive rounded-circle">
-      </div>
-    </nav>
-  </header>
+  <?php include 'header.php';?>
   <div class="container-fluid">
     <div class="main-container">
       <div class="row">
         <div class="col-sm-12 about-us">
           <div class="row  m-0 p-3 tdp__history">
             <div class="col-sm-4">
-             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -68,13 +35,13 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img class="d-block" src="_ui\responsive\common\images\mla.jpg" alt="First slide">
+                    <img class="d-block" src="<?php echo base_url()?>_ui\responsive\common\images\cm.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="_ui\responsive\common\images\kbabu.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="<?php echo base_url()?>_ui\responsive\common\images\kbabu.jpg" alt="Second slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="_ui\responsive\common\images\cm.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="<?php echo base_url()?>_ui\responsive\common\images\mla.jpg" alt="Third slide">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -87,16 +54,17 @@
                 </a>
               </div>
             </div>
-            <div class="col-lg-8 col-md-8 col-8 tdp__history--info">
-              <h3>Information About TDP</h3>
-                <p>తెలుగుదేశం పార్టీ లేదా తె.దే.పా భారతదేశంలోని ఆంధ్ర ప్రదేశ్ రాష్ఠ్రానికి చెందిన ఒక ప్రాంతీయ రాజకీయ పార్టీ. తెలుగుదేశం పార్టీని ప్రముఖ తెలుగు సినిమా నటుడు నందమూరి తారక రామారావు 1982, మార్చి 29న ప్రారంభించాడు.అప్పటివరకు రాష్ట్రాన్ని ఏకపక్షముగా పాలిస్తున్న కాంగ్రేసు పార్టీకి ప్రత్యమ్నాయముగా ఒక ప్రాంతీయ పార్టీ ఉండాలనే ఆశయముతో స్థాపించాడు. పార్టీ స్థాపించిన తరువాత సన్యాసము పుచ్చుకొని తన జీవితము తెలుగు ప్రజలకు, తెలుగు జాతి ఆత్మగౌరవ పునరుద్ధరణకే తన జీవితము అంకితమని ప్రతినబూనాడు..</p>
-              <h3>Sri Nandamuri TarakaRama Rao</h3> 
-                <p>నందమూరి తారక రామారావు తన చైతన్య రధంపై సుడిగాలి పర్యటన జరిపి ఎన్నికల ప్రచారం కొనసాగించారు. అప్పటికే సినిమా రంగంలో సాధించిన అనితరసాధ్యమైన ఆదరణతో ప్రజాభిమానాన్ని చూరగొన్నారు. తెలుగువారి "ఆత్మగౌరవ" నినాదంతొ, పార్టీ పెట్టిన 9 నెలలలోనే ప్రభుత్వాన్ని ఏర్పాటుచేసి తెలుగుదేశం పార్టీ అందరినీ ఆశ్చర్యపరచింది. సినిమావాళ్ళకు రాజకీయాలేమి తెలుసన్న అప్పటి ప్రధాని "ఇందిరా గాంధీ" హేళనకు గట్టి జవాబు చెప్పారు.</p>
-              <h3>Nara Chandrababu Naidu</h3> 
-                <p >1995వ సంవత్సరంలో తెలుగుదేశం పార్టీలో సంభవించిన పరిణామాల నేపథ్యంలో చంద్రబాబు నాయుడు అధికారాన్ని చేజిక్కించుకున్నాడు. అప్పటి నుండి 2004వ సంవత్సరం వరకు ముఖ్యమంత్రిగా కొనసాగి, అత్యధిక కాలం ఆంధ్ర ప్రదేశ్ ముఖ్యమంత్రిగా పనిచేసిన రాజకీయ నాయకునిగా 9 సం".</p>               
-              </div>
+            <div class="col-sm-8">
+             <h3>Information About TDP</h3>
+            <p>The Telugu Desam party founded by Dr N T Rama Rao in 1983 aimed at safeguarding the political, economic, social and cultural foundations of telugu speaking people in the country.</p>
+            <p>In Principle and also in Practice it is the mission of the TDP the party to protect the dignity and self respect of Telugus and also ensure provision food, shelter and clothing to the common man at affordable and sustainable prices and achieve empowerment of women, youth and all backward segments of society in AndhraPradesh.</p>
+          <h3>Sri Nandamuri TarakaRama Rao</h3> 
+            <p>N. T. Rama rao (NTR) was born on 28 May 1923 in Nimmakuru, a small village in Gudivada taluk of Krishna District, which was a part of the erstwhile Madras Presidency of British India. He was born to a farming couple, Nandamuri Lakshmaih and Venkata Ramamma</p>
+          <h3>Nara Chandrababu Naidu</h3> 
+            <p>Nara Chandrababu Naidu (born 20 April 1950) is an Indian politician and 1st Chief Minister of Andhra Pradesh since 2014 after state bifurcation. Previously he served as Chief Minister from 1995 to 2004. He is also the President of the Telugu Desam Party in Andhra Pradesh .</p>
           </div>
-          <div id="accordion" class="about-us__accordion">
+             </div>
+			   <div id="accordion" class="about-us__accordion">
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
@@ -118,7 +86,7 @@
               <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="false" aria-controls="collapseTwo">చేపట్టిన పదవులు</button>
+                    aria-expanded="true" aria-controls="collapseTwo">చేపట్టిన పదవులు</button>
                 </h5>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
@@ -136,7 +104,7 @@
               <div class="card-header" id="headingThree">
                 <h5 class="mb-0">
                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                    aria-expanded="false" aria-controls="collapseThree">నియోజకవర్గ అభివృద్ది</button>
+                    aria-expanded="true" aria-controls="collapseThree">నియోజకవర్గ అభివృద్ది</button>
                 </h5>
               </div>
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
@@ -171,6 +139,7 @@
               </div>
             </div>
           </div>
+          </div>  
         </div>
       </div>
     </div>
@@ -199,9 +168,9 @@
       config: {}
     };
   </script>
-  <script src="_ui/responsive/common/js/combined.min.js"></script>
-  <script src="_ui/responsive/common/js/_autoload.js"></script>
-  <script src="_ui/responsive/common/js/owl.carousel.js"></script>
+  <script src="<?php echo base_url()?>/_ui/responsive/common/js/combined.min.js"></script>
+  <script src="<?php echo base_url()?>/_ui/responsive/common/js/_autoload.js"></script>
+  <script src="<?php echo base_url()?>/_ui/responsive/common/js/owl.carousel.js"></script>
 
 </body>
 

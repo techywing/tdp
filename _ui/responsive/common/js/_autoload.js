@@ -21,3 +21,11 @@ function _autoload(){
 $(function(){
 	_autoload();
 });
+
+	$('li.nav-item a').each(function(){
+	  var url = window.location.pathname,
+      urlRegExp = new RegExp(url.replace(/\/$/,''));    
+			if(urlRegExp.test(this.href)){
+				$(this).addClass("active");
+			}
+});
